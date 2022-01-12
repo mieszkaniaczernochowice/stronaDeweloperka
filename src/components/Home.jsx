@@ -27,31 +27,57 @@ import arrow from "./svg/arrow.svg";
 import oddanie from "./svg/oddanie.svg";
 import budowa from "./svg/budowa.svg";
 import sprzedaz from "./svg/sprzedaz.svg";
-import bg from './img/9.png'
+import bg from "./img/9.png";
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
   let lang = localStorage.getItem("lang");
-
+  let color = "red";
 
   return (
     <Row className="">
-      <Row>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-
-        >
-          <Card className="home11">
-              Domy Czarnochowice
-              <Divider />
-            
-
-            <Row >
+      <Row className="home1">
+        <Col className="center"s={4} m={2}>
+          <Card className="red homeIcons1">
+            <div className="white-text">
+              <img src={sprzedaz} width="100%" />
+              Rozpoczęcie sprzedazy 
+              <br/>
+              2 kwartal 21'
+            </div>
+          </Card>
+        </Col>
+        <Col className="center"s={4} m={2} push="m3">
+          <Card className=" red homeIcons1">
+            <div className="white-text">
+              <img  src={budowa} width="100%" />
+              Rozpoczęcie Budowy 
+              <br/>
+              2 kwartal 21'
+            </div>
+          </Card>
+        </Col>
+        <Col s={4} m={2} push="m6">
+          <Card className=" red homeIcons1">
+            <div className="white-text">
+              <img src={oddanie} width="100%" />
+             Planowane Oddanie 
+              <br/>
+              2 kwartal 21'
+            </div>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="home11">
+        <div data-aos="fade-right" data-aos-duration="2000">
+          <Card className="">
+            Domy Czarnochowice
+            <Divider />
+            <Row>
               <Col m={12} s={12}>
-                <div >
+                <div>
                   Nasze domy szeregowe wyróżniają się nowoczesną architekturą
                   oraz wysokim standardem. W realizacjach Real Invest szczególną
                   uwagę przywiązujemy do przeszkleń, dzięki czemu oferowane
@@ -62,35 +88,13 @@ const Home = () => {
                   niezależnie od wieku.
                 </div>
                 <Row />
-
-
               </Col>
             </Row>
           </Card>
         </div>
-
-      </Row>
-      <Row>
-
-        <Col className="red" s={12} m={2}>
-          <img  src={sprzedaz} width="100%" />
-        <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
-        </Col>
-        <Col  className="red" s={12} m={2} push="m1">
-          <img className="red" src={budowa} width="100%" />
-          <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
-        </Col>
-        <Col className="red" s={12} m={2} push="m3">
-          <img  src={oddanie} width="100%" />
-          <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
-        </Col>
-        <Col className="red" s={12} m={2} push="m4">
-          <img  src={oddanie} width="100%" />
-          <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
-        </Col>
-
       </Row>
       <img src={arrow} width="100%" />
+      <Row /> <Row /> <Row /> <Row /> <Row />
       <Row>
         <Col s={12}>
           <div className="video-wrapper z-depth-5 hide-on-small-only">
@@ -115,11 +119,8 @@ const Home = () => {
               loop={true}
             />
           </div>
-
         </Col>
       </Row>
-
-
       <Row />
       <Row />
       <Row />
@@ -271,7 +272,6 @@ const Home = () => {
           </Card>
         </div>
       </Row>
-
     </Row>
   );
 };

@@ -26,7 +26,7 @@ const Nav = () => {
           </Link>
           </Col>
           <Col s={9}>
-            <br/>
+          
         <Link to="home" className="navbaritem">
         
           O inwestycji
