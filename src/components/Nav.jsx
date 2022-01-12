@@ -1,6 +1,6 @@
 import "materialize-css";
 import React, { Component, useEffect } from "react";
-import { Button, Col, Divider, Row } from "react-materialize";
+import { Button, Col, Divider, Row, Card } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
@@ -16,29 +16,43 @@ const Nav = () => {
   if (lang == "en") return <Row></Row>;
   else
     return (
-      <Row className="navbar">
-        <Col m={10} push="m1">
-          <h3>Domy Czarnochowice</h3>
-          <Link to="home" className="navbaritem">
-            O inwestycji
-          </Link>
 
-          <Link to="portfolio" className="navbaritem">
-            Standart
+      <div className="navbar red">
+
+      <Row>
+        <Col s={3}>
+        <Link to="home" className="">
+        <img className="logo" src={logo}/> 
+          </Link>
+          </Col>
+          <Col s={9}>
+            <br/>
+        <Link to="home" className="navbaritem">
+        
+          O inwestycji
+         
           </Link>
           
-          <Link to="offer" className="navbaritem">
-            Lokale
+        <Link to="portfolio" className="navbaritem">
+          Standart
           </Link>
-          <Link to="gallery" className="navbaritem">
-            Galeria
+          
+        <Link to="offer" className="navbaritem">
+          Lokale
           </Link>
-          <Link to="contact" className="navbaritem">
-            Kontakt
+        
+        <Link to="gallery" className="navbaritem">
+          Galeria
           </Link>
-          <Divider/>
-        </Col>
+         
+        <Link to="contact" className="navbaritem">
+          Kontakt
+          </Link>
+          </Col>
       </Row>
+
+
+      </div>
     );
 };
 

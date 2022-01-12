@@ -9,7 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(../src/components/img/bg.webp); 
+  /* background: url(../src/components/img/bg.webp);  */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,20 +20,48 @@ body {
 }
 
 
+.home1{
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 10px !important;
+}
+
+.home11{
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-radius: 10px !important;
+  margin-top: 25vh !important;
+  height: 20vh !important;
+  
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-/* .navbar{
-  align-self: start;
-} */
-.navbaritem{
-  justify-content: space-evenly;
-  color: rgb(82, 82, 82);
-  margin-left: 1vw;
-  margin-right: 1vw;
+.navbar{
+  /* align-self: start; */
+  /* background-color: rgba(150, 0, 0, 0.973); */
+ 
+  border-radius: 10px;
+  width: 80vw !important;
+  margin-left: 10vw !important;
+  height: 10vh;
   font-size: 120%;
+}
+
+.navbar1{
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.logo{
+  height: 10vh !important;
+}
+.navbaritem{
+  justify-content: space-evenly !important;
+  color: rgb(255, 255, 255);
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 120%;
+  margin-bottom: -5vh !important;
+  
 }
 
 .navbaritem:hover{
@@ -83,4 +111,16 @@ background-color: rgba(255, 255, 255, 0.5);
 
 .car{
   min-height: 30vw;
+}
+.modalInfo{
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  min-width: 90vw !important;
+  min-height: 90vh !important;
+  top: 5vh !important;
+}
+
+.bg{
+  position: fixed !important;
+  z-index: -3;
+  top:0vh !important;
 }

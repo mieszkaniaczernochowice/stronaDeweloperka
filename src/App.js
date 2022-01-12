@@ -14,18 +14,21 @@ import TypA from "./components/TypA";
 import TypB from "./components/TypB";
 import TypC from "./components/TypC";
 import TypD from "./components/TypD";
-
+import bg from './components/img/13.png'
 function App() {
   return (
     <div className="App">
       <Row>
-        <Col s={12} m={10} l={8} push="m1 l2 s0" className="appbg">
-          <BrowserRouter>
+      <Row className="bg">
+        <img src={bg} width='100%'/>
+      </Row>
+        
+          <BrowserRouter><Col s={12} m={12} l={12} >
             <br />
-
             <Nav />
+          
             <br />
-
+</Col><Col s={12} m={10} l={8} push="m1 l2 s0" className="appbg">
             <Switch>
               <Route path="/home" component={Home} />
               <Route path="/contact" component={Contact} />
@@ -81,9 +84,9 @@ function App() {
                   </h5>
                 </Col>
               </Row>
-            </div>
+            </div>  </Col>
           </BrowserRouter>
-        </Col>
+      
       </Row>
 <div className="hide-on-small-only">
       <Button

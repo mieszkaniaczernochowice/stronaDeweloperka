@@ -171,12 +171,15 @@ const images = [
     thumbnail: "https://raw.githubusercontent.com/mieszkaniaczernochowice/stronaDeweloperka/main/public/assets/39.jpg",
   },
 
-
+  {
+    original: "https://raw.githubusercontent.com/mieszkaniaczernochowice/stronaDeweloperka/main/public/assets/39.jpg",
+    thumbnail: "https://raw.githubusercontent.com/mieszkaniaczernochowice/stronaDeweloperka/main/public/assets/39.jpg",
+  },
  
 ];
 
 export default class Gallery extends React.Component {
   render() {
-    return <ImageGallery items={images} />;
+    return <ImageGallery  items={images} />;
   }
 }

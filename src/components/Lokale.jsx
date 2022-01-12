@@ -15,7 +15,7 @@ import {
 } from "react-materialize";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Lista from "./Lista";
+import Apartments from "../components/variables/Apartments.jsx";
 import axoLokale from "./img/axoLokale.webp";
 import axoLokale1 from "./img/axoLokale1.webp";
 import axoLokale2 from "./img/axoLokale2.webp";
@@ -28,17 +28,18 @@ const Lokale = () => {
 
   let lang = localStorage.getItem("lang");
 
-  const items = Lista.map((Lista) => {
+  const items = Apartments.map((Apartments) => {
     return (
       <Table>
         <tr className="hoverable">
-          <td>{Lista.Lokal}</td>
-          <td>{Lista.Metraz}</td>
-          <td>{Lista.Pietro}</td>
-          <td>{Lista.Cena}</td>
-          <td>{Lista.Status}</td>
-          <td>{Lista.Rzut}</td>
-          <td>{Lista.Informacje}</td>
+          <td>{Apartments.name}</td>
+          <td>{Apartments.size}</td>
+          <td>{Apartments.location}</td>
+          <td>{Apartments.price}</td>
+          <td>{Apartments.status}</td>
+          <td>{Apartments.plan}</td>
+          <td>{Apartments.info}</td>
+          <td><Button>Napisz</Button></td>
         </tr>
       </Table>
     );
@@ -103,7 +104,7 @@ const Lokale = () => {
         
       </div>{" "}
 
-      <Card className="z-depth-5 white">
+      <Card className="z-depth-5 home1">
       {items}
       </Card>
     </div>

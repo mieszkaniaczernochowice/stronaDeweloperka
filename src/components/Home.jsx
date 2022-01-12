@@ -27,6 +27,7 @@ import arrow from "./svg/arrow.svg";
 import oddanie from "./svg/oddanie.svg";
 import budowa from "./svg/budowa.svg";
 import sprzedaz from "./svg/sprzedaz.svg";
+import bg from './img/9.png'
 const Home = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
@@ -37,6 +38,59 @@ const Home = () => {
 
   return (
     <Row className="">
+      <Row>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+
+        >
+          <Card className="home11">
+              Domy Czarnochowice
+              <Divider />
+            
+
+            <Row >
+              <Col m={12} s={12}>
+                <div >
+                  Nasze domy szeregowe wyróżniają się nowoczesną architekturą
+                  oraz wysokim standardem. W realizacjach Real Invest szczególną
+                  uwagę przywiązujemy do przeszkleń, dzięki czemu oferowane
+                  przez nas wnętrza są słoneczne, a sama bryła budynku sprawia
+                  wrażenie lżejszej. Damy również o estetykę i funkcjonalność
+                  zagospodarowania części wspólnych naszych osiedli, dzięki
+                  czemu są przestrzeniami przyjaznymi dla mieszkańców
+                  niezależnie od wieku.
+                </div>
+                <Row />
+
+
+              </Col>
+            </Row>
+          </Card>
+        </div>
+
+      </Row>
+      <Row>
+
+        <Col className="red" s={12} m={2}>
+          <img  src={sprzedaz} width="100%" />
+        <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
+        </Col>
+        <Col  className="red" s={12} m={2} push="m1">
+          <img className="red" src={budowa} width="100%" />
+          <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
+        </Col>
+        <Col className="red" s={12} m={2} push="m3">
+          <img  src={oddanie} width="100%" />
+          <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
+        </Col>
+        <Col className="red" s={12} m={2} push="m4">
+          <img  src={oddanie} width="100%" />
+          <div className="white-text">Data rozpoczęcia sprzedazy 2 kwartal 21'</div>
+        </Col>
+
+      </Row>
+      <img src={arrow} width="100%" />
       <Row>
         <Col s={12}>
           <div className="video-wrapper z-depth-5 hide-on-small-only">
@@ -61,10 +115,11 @@ const Home = () => {
               loop={true}
             />
           </div>
-       
+
         </Col>
       </Row>
-      <img src={arrow} width="100%" />
+
+
       <Row />
       <Row />
       <Row />
@@ -129,15 +184,15 @@ const Home = () => {
               </Col>
 
               <Col m={6} s={12}>
-              <Iframe
-  url="https://p3d.in/RNOMQ"
-  width="100%"
-  height="600px"
-  id="myId"
-  className="myClassname "
-  display="initial"
-  position="relative"
-/>
+                <Iframe
+                  url="https://p3d.in/RNOMQ"
+                  width="100%"
+                  height="600px"
+                  id="myId"
+                  className="myClassname "
+                  display="initial"
+                  position="relative"
+                />
               </Col>
             </Row>
           </Card>
@@ -216,41 +271,7 @@ const Home = () => {
           </Card>
         </div>
       </Row>
-      <Row>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="2000"
-          className="hoverable z-depth-2"
-        >
-          <Card className="z-depth-5">
-            <h5>
-              Terminy <Divider />
-            </h5>
-            <Row />
-            <Col s={12} m={4}>
-              <img  className="red" src={sprzedaz} width="70%" />
-              <br />
-         
-            </Col>
-            <Col s={12} m={4}>
-              <img className="red" src={budowa} width="70%" />
-              <br />
-     
-            </Col>
-            <Col s={12} m={4}>
-              <img className="red" src={oddanie} width="70%" />
-              <br />
-           
-            </Col>
-            <Row>
-              <Col m={6} s={12}>
-                <div className="left-align  "></div>
-              </Col>
-              <Col m={6} s={12}></Col>
-            </Row>
-          </Card>
-        </div>
-      </Row>
+
     </Row>
   );
 };

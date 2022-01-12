@@ -31,7 +31,8 @@ const Portfolio = () => {
           className="hoverable z-depth-2"
         >
           <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle image={arch} />} horizontal>
+            <Card className="home1" header={<CardTitle image={arch} />} 
+            horizontal>
               <h5>
                 Nowoczesne budownictwo <Divider />
               </h5>
@@ -47,19 +48,123 @@ const Portfolio = () => {
             </Card>
           </Col>
         </div>
-        <Row />
+        <Row/>
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
+          data-aos-duration="3000"
+          className="hoverable z-depth-2"
+        >
+          <Col m={10} s={12} push="m1">
+            <Card className="home1" header={<CardTitle image={arch} />} 
+            horizontal>
+              <h5>
+                Nowoczesne budownictwo <Divider />
+              </h5>
+              <div className="left-align">
+                Dostępne w ofercie Real Invest segmenty to domy, których
+                użytkowanie jest znacznie tańsze niż w przypadku starszych
+                obiektów budowlanych. Jeśli zdecydujesz się na zamontowanie na
+                dachu kolektorów słonecznych, będziesz mógł obniżyć rachunki za
+                gaz i prąd nawet o kilkadziesiąt procent. Szczelne okna
+                zapobiegają utracie ciepła. Ściany budynków pokryte są
+                estetycznie wyglądającą, odporną na zabrudzenia elewacją.
+              </div>{" "}
+            </Card>
+          </Col>
+        </div>
+        <Row/>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="4000"
+          className="hoverable z-depth-2"
+        >
+          <Col m={10} s={12} push="m1">
+            <Card className="home1" header={<CardTitle image={arch} />} 
+            horizontal>
+              <h5>
+                Nowoczesne budownictwo <Divider />
+              </h5>
+              <div className="left-align">
+                Dostępne w ofercie Real Invest segmenty to domy, których
+                użytkowanie jest znacznie tańsze niż w przypadku starszych
+                obiektów budowlanych. Jeśli zdecydujesz się na zamontowanie na
+                dachu kolektorów słonecznych, będziesz mógł obniżyć rachunki za
+                gaz i prąd nawet o kilkadziesiąt procent. Szczelne okna
+                zapobiegają utracie ciepła. Ściany budynków pokryte są
+                estetycznie wyglądającą, odporną na zabrudzenia elewacją.
+              </div>{" "}
+            </Card>
+          </Col>
+        </div>
+        <Row/>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="5000"
+          className="hoverable z-depth-2"
+        >
+          <Col m={10} s={12} push="m1">
+            <Card className="home1" header={<CardTitle image={arch} />} 
+            horizontal>
+              <h5>
+                Nowoczesne budownictwo <Divider />
+              </h5>
+              <div className="left-align">
+                Dostępne w ofercie Real Invest segmenty to domy, których
+                użytkowanie jest znacznie tańsze niż w przypadku starszych
+                obiektów budowlanych. Jeśli zdecydujesz się na zamontowanie na
+                dachu kolektorów słonecznych, będziesz mógł obniżyć rachunki za
+                gaz i prąd nawet o kilkadziesiąt procent. Szczelne okna
+                zapobiegają utracie ciepła. Ściany budynków pokryte są
+                estetycznie wyglądającą, odporną na zabrudzenia elewacją.
+              </div>{" "}
+            </Card>
+          </Col>
+        </div>
+        <Row/>
+        <div
+          data-aos="fade-left"
           data-aos-duration="2000"
           className="hoverable z-depth-2"
         >
           <Col m={10} s={12} push="m1">
-            <Card header={<CardTitle />} horizontal>
-            <h5>
-                Zestawienie <Divider />
+            <Card className="home1" header={<CardTitle image={arch} />} 
+            horizontal>
+              <h5>
+                Nowoczesne budownictwo <Divider />
               </h5>
-              <Row/>
-              <Standart />
+              <div className="left-align">
+                Dostępne w ofercie Real Invest segmenty to domy, których
+                użytkowanie jest znacznie tańsze niż w przypadku starszych
+                obiektów budowlanych. Jeśli zdecydujesz się na zamontowanie na
+                dachu kolektorów słonecznych, będziesz mógł obniżyć rachunki za
+                gaz i prąd nawet o kilkadziesiąt procent. Szczelne okna
+                zapobiegają utracie ciepła. Ściany budynków pokryte są
+                estetycznie wyglądającą, odporną na zabrudzenia elewacją.
+              </div>{" "}
+            </Card>
+          </Col>
+        </div>
+        <Row/>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="2000"
+          className="hoverable z-depth-2"
+        >
+          <Col m={10} s={12} push="m1">
+            <Card className="home1" header={<CardTitle image={arch} />} 
+            horizontal>
+              <h5>
+                Nowoczesne budownictwo <Divider />
+              </h5>
+              <div className="left-align">
+                Dostępne w ofercie Real Invest segmenty to domy, których
+                użytkowanie jest znacznie tańsze niż w przypadku starszych
+                obiektów budowlanych. Jeśli zdecydujesz się na zamontowanie na
+                dachu kolektorów słonecznych, będziesz mógł obniżyć rachunki za
+                gaz i prąd nawet o kilkadziesiąt procent. Szczelne okna
+                zapobiegają utracie ciepła. Ściany budynków pokryte są
+                estetycznie wyglądającą, odporną na zabrudzenia elewacją.
+              </div>{" "}
             </Card>
           </Col>
         </div>
@@ -146,6 +251,23 @@ const Portfolio = () => {
           </Col>
         </div>
         <Row />
+        <div
+          data-aos="fade-right"
+          data-aos-duration="2000"
+          className="hoverable z-depth-2"
+        >
+          <Col m={10} s={12} push="m1">
+            <Card header={<CardTitle />} horizontal>
+            <h5>
+                Zestawienie <Divider />
+              </h5>
+              <Row/>
+              <Standart />
+            </Card>
+          </Col>
+        </div>
+        <Row />
+      
       </Row>
     );
 };
