@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  primary-color: #000000 !important;
 }
 
 .App-logo {
@@ -12,6 +13,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +30,4 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
