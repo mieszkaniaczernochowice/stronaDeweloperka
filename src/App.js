@@ -7,8 +7,9 @@ import {
   addDoc,
   updateDoc,
   deleteDoc,
-  doc,
+  doc, getDoc
 } from "firebase/firestore";
+import HomePage from './homePage'
 
 function App() {
   const [newName, setNewName] = useState("");
@@ -41,6 +42,20 @@ function App() {
     getUsers();
   }, []);
 
+
+  const homePage = async () =>
+  {
+    const id = "1O5FSawiTc3bBwyIV7vZ";
+    const docRef = doc(db, "users", id, "websideContents","homePage");
+    const docSnap = await getDoc(docRef);
+    
+    if (docSnap.exists()) {
+      console.log("Document data:", docSnap.data());
+    } else {
+      console.log("No such document!");
+    }
+  }
+  
   return (
     <div className="App">
       <input
@@ -58,10 +73,13 @@ function App() {
       />
 
       <button onClick={createUser}> Create User</button>
+      
       {users.map((user) => {
         return (
           <div>
             {" "}
+            
+            
             <h1>Name: {user.name}</h1>
             <h1>Age: {user.age}</h1>
             <button
@@ -83,6 +101,8 @@ function App() {
           </div>
         );
       })}
+{/* 
+<HomePage/> */}
     </div>
   );
 }
